@@ -1,0 +1,27 @@
+extends layout.jade
+
+block content
+	h3 Configure below
+		form(name="configure", method="post")
+			div.input
+				span.label Port Number: 
+				input(type="number", name="port")
+				span.label #{ErrorMessages.portError}
+			div.input
+				span.label Longitude: 
+				input(type="double", name="longitude")
+				span.label #{ErrorMessages.longitudeError}
+			div.input
+				span.label Latitude: 
+				input(type="double", name="latitude")
+				span.label #{ErrorMessages.latitudeError}
+			div.input
+				span.label Address: 
+				input(type="text", name="address")
+				span.label #{ErrorMessages.addressError}
+			div.input
+				span.label Subscription Manager Address: 
+				input(type="text", name="submanAddress")
+				span.label #{ErrorMessages.subManAddrError}
+			div.actions
+				input(type="submit", value="Submit")				

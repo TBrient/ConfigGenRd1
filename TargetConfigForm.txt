@@ -1,0 +1,33 @@
+extends layout.jade
+
+block content
+	h3 Start:
+		form(name="configure", method="post")
+			div.input
+				span.label Start Method URL: 
+				input(type="text", name="timerName")
+				span.label #{ErrorMessages.nameError}
+			div.input
+				span.label Name: 
+				input(type="text", name="startTime")
+				span.label #{ErrorMessages.startTimeError}
+			div.input
+				span.label Value: 
+				input(type="text", name="endTime")
+				span.label #{ErrorMessages.endTimeError}
+				span.label Address: 
+			h3 End:
+			div.input
+				span.label End Method URL: 
+				input(type="text", name="timerName")
+				span.label #{ErrorMessages.nameError}
+			div.input
+				span.label Name: 
+				input(type="text", name="startTime")
+				span.label #{ErrorMessages.startTimeError}
+			div.input
+				span.label Value: 
+				input(type="text", name="endTime")
+				span.label #{ErrorMessages.endTimeError}
+				span.label Address: 
+			

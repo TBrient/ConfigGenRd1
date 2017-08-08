@@ -1,0 +1,20 @@
+extends layout.jade
+
+block content
+	h3 Configure Timer Server below
+		form(name="configure", method="post")
+			div.input
+				span.label Timer Name: 
+				input(type="text", name="timerName")
+				span.label #{ErrorMessages.nameError}
+			div.input
+				span.label Daily Start Time: 
+				input(type="text", name="startTime")
+				span.label #{ErrorMessages.startTimeError}
+			div.input
+				span.label Daily End Time: 
+				input(type="text", name="endTime")
+				span.label #{ErrorMessages.endTimeError}
+				span.label Address: 
+			div.actions
+				input(type="button", value="Add Target")				
